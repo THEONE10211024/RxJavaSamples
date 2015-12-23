@@ -2,4 +2,7 @@
     <string name="app_name">RxJavaSamples</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_operators">OperatorsActivity</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

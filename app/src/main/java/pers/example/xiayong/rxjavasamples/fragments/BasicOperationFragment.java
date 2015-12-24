@@ -38,6 +38,7 @@ public class BasicOperationFragment extends Fragment {
     void demoRetrofitCalls() {
         clickedOn(new LongOperationFragment());
     }
+
     private void clickedOn(@NonNull Fragment fragment) {
         final String tag = fragment.getClass().toString();
         getActivity().getSupportFragmentManager()

@@ -1,6 +1,5 @@
 package pers.example.xiayong.rxjavasamples.fragments;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -16,7 +15,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import pers.example.xiayong.rxjavasamples.R;
-import pers.example.xiayong.rxjavasamples.fragments.dummy.DummyContent;
 
 
 public class MainFragment extends Fragment implements AbsListView.OnItemClickListener {

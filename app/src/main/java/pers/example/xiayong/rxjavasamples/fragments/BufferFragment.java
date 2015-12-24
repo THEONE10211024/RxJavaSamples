@@ -8,17 +8,14 @@ import android.view.ViewGroup;
 
 import pers.example.xiayong.rxjavasamples.R;
 
-/**
- * 以实例说明各种常见操作符的含义,列举常见的使用场景
- */
-public class OperatorsFragment extends Fragment {
 
+public class BufferFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_item2, container, false);
-
-        return view;
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_buffer, container, false);
     }
+
 }

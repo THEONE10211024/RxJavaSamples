@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <TableLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        >
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            >
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:padding="@dimen/text_micro"
+                android:gravity="left"
+                android:text="@string/msg_demo_timing"
+                android:layout_span="2"
+
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            >
+
+            <Button
+                android:id="@+id/btn_demo_timing_1"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="BTN 1"
+                />
+
+            <Button
+                android:id="@+id/btn_demo_timing_2"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="BTN 2"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            >
+
+            <Button
+                android:id="@+id/btn_demo_timing_3"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="BTN 3"
+                />
+
+            <Button
+                android:id="@+id/btn_demo_timing_4"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="BTN 4"
+                />
+        </TableRow>
+    </TableLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        >
+
+        <ListView
+            android:id="@+id/list_threading_log"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            />
+
+        <ImageButton
+            android:id="@+id/btn_clr"
+            android:src="@android:drawable/ic_menu_close_clear_cancel"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

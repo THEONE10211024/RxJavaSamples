@@ -12,23 +12,36 @@
         android:layout_width="match_parent"
         android:padding="10dp"
         android:gravity="center"
-        android:text="@string/msg_demo_buffer"
+        android:text="@string/msg_demo_exponential_backoff"
         />
 
-    <Button
-        android:id="@+id/btn_start_operation"
+
+    <LinearLayout
+        android:layout_gravity="center"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        android:layout_marginLeft="90dp"
-        android:layout_marginRight="90dp"
-        android:textSize="16dp"
-        android:text="tap me"
-        />
+        >
+
+        <Button
+            android:id="@+id/btn_eb_retry"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Retry"
+            />
+
+        <Button
+            android:id="@+id/btn_eb_delay"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Delay"
+            />
+    </LinearLayout>
 
     <ListView
         android:id="@+id/list_threading_log"
         android:layout_height="match_parent"
         android:layout_width="match_parent"
         />
-
 </LinearLayout>

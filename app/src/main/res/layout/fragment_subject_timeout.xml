@@ -12,23 +12,35 @@
         android:layout_width="match_parent"
         android:padding="10dp"
         android:gravity="center"
-        android:text="@string/msg_demo_buffer"
+        android:text="@string/msg_demo_timeout"
         />
 
-    <Button
-        android:id="@+id/btn_start_operation"
+    <LinearLayout
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        android:layout_marginLeft="90dp"
-        android:layout_marginRight="90dp"
-        android:textSize="16dp"
-        android:text="tap me"
-        />
+        >
+
+        <Button
+            android:id="@+id/btn_demo_timeout_1_2s"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_width="0dip"
+            android:text="Button 1"
+            />
+
+        <Button
+            android:id="@+id/btn_demo_timeout_1_5s"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_width="0dip"
+            android:text="Button 2"
+            />
+
+    </LinearLayout>
 
     <ListView
         android:id="@+id/list_threading_log"
         android:layout_height="match_parent"
         android:layout_width="match_parent"
         />
-
 </LinearLayout>

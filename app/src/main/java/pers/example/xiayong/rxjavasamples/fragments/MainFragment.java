@@ -1,97 +1,93 @@
 package pers.example.xiayong.rxjavasamples.fragments;
 
 import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AbsListView;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.ListAdapter;
-import android.widget.TextView;
 
-import java.util.ArrayList;
-import java.util.List;
 
+import butterknife.ButterKnife;
+import butterknife.OnClick;
 import pers.example.xiayong.rxjavasamples.R;
+import pers.example.xiayong.rxjavasamples.rxbus.RxBusDemoFragment;
 
-
-public class MainFragment extends Fragment implements AbsListView.OnItemClickListener {
-
-
-    /**
-     * The fragment's ListView/GridView.
-     */
-    private AbsListView mListView;
-
-    /**
-     * The Adapter which will be used to populate the ListView/GridView with
-     * Views.
-     */
-    private ListAdapter mAdapter;
-
-    public static MainFragment newInstance() {
-        MainFragment fragment = new MainFragment();
-        return fragment;
-    }
-
-    /**
-     * Mandatory empty constructor for the fragment manager to instantiate the
-     * fragment (e.g. upon screen orientation changes).
-     */
-    public MainFragment() {
-    }
+public class MainFragment
+      extends BaseFragment {
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-
-
-        mAdapter = new ArrayAdapter<String>(getActivity(),
-                android.R.layout.simple_list_item_1, android.R.id.text1, getData());
+    public View onCreateView(LayoutInflater inflater,
+                             @Nullable ViewGroup container,
+                             @Nullable Bundle savedInstanceState) {
+        View layout = inflater.inflate(R.layout.fragment_main, container, false);
+        ButterKnife.bind(this, layout);
+        return layout;
     }
 
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_item, container, false);
-
-        // Set the adapter
-        mListView = (AbsListView) view.findViewById(android.R.id.list);
-        ((AdapterView<ListAdapter>) mListView).setAdapter(mAdapter);
-
-        // Set OnItemClickListener so we can be notified on item clicks
-        mListView.setOnItemClickListener(this);
-
-        return view;
+    @OnClick(R.id.btn_demo_schedulers)
+    void demoConcurrencyWithSchedulers() {
+        clickedOn(new ConcurrencyWithSchedulersDemoFragment());
     }
 
-    private List<String> getData(){
-        List<String> items = new ArrayList<String>();
-        items.add("入门");
-        items.add("操作符");
-        items.add("其他");
-        return items;
+    @OnClick(R.id.btn_demo_buffer)
+    void demoBuffer() {
+        clickedOn(new BufferDemoFragment());
     }
 
-    @Override
-    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
+    @OnClick(R.id.btn_demo_debounce)
+    void demoThrottling() {
+        clickedOn(new DebounceSearchEmitterFragment());
     }
 
-    /**
-     * The default content for this Fragment has a TextView that is shown when
-     * the list is empty. If you would like to change the text, call this method
-     * to supply the text it should use.
-     */
-    public void setEmptyText(CharSequence emptyText) {
-        View emptyView = mListView.getEmptyView();
-
-        if (emptyView instanceof TextView) {
-            ((TextView) emptyView).setText(emptyText);
-        }
+    @OnClick(R.id.btn_demo_retrofit)
+    void demoRetrofitCalls() {
+        clickedOn(new RetrofitFragment());
     }
 
+    @OnClick(R.id.btn_demo_double_binding_textview)
+    void demoDoubleBindingWithPublishSubject() {
+        clickedOn(new DoubleBindingTextViewFragment());
+    }
 
+    @OnClick(R.id.btn_demo_rxbus)
+    void demoRxBus() {
+        clickedOn(new RxBusDemoFragment());
+    }
+
+    @OnClick(R.id.btn_demo_form_validation_combinel)
+    void formValidation() {
+        clickedOn(new FormValidationCombineLatestFragment());
+    }
+
+    @OnClick(R.id.btn_demo_pseudo_cache)
+    void pseudoCacheDemo() {
+        clickedOn(new PseudoCacheMergeFragment());
+    }
+
+    @OnClick(R.id.btn_demo_timing)
+    void demoTimerIntervalDelays() {
+        clickedOn(new TimingDemoFragment());
+    }
+
+    @OnClick(R.id.btn_demo_exponential_backoff)
+    void demoExponentialBackoff() {
+        clickedOn(new ExponentialBackoffFragment());
+    }
+
+    @OnClick(R.id.btn_demo_rotation_persist)
+    void demoRotationPersist() {
+        clickedOn(new RotationPersist2Fragment());
+        //clickedOn(new RotationPersist1Fragment());
+    }
+
+    private void clickedOn(@NonNull Fragment fragment) {
+        final String tag = fragment.getClass().toString();
+        getActivity().getSupportFragmentManager()
+              .beginTransaction()
+              .addToBackStack(tag)
+              .replace(android.R.id.content, fragment, tag)
+              .commit();
+    }
 }

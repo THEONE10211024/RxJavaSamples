@@ -79,6 +79,12 @@
             android:layout_width="match_parent"
             android:text="@string/btn_demo_pseudocache"
             />
+        <Button
+            android:id="@+id/btn_demo_pseudo_cache2"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="@string/btn_demo_pseudocache2"
+            />
 
         <Button
             android:id="@+id/btn_demo_timing"
@@ -99,6 +105,18 @@
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
             android:text="@string/btn_demo_rotation_persist"
+            />
+        <Button
+            android:id="@+id/btn_demo_polling"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="@string/btn_demo_polling"
+            />
+        <Button
+            android:id="@+id/btn_demo_click"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="@string/btn_demo_click"
             />
     </LinearLayout>
 </ScrollView>

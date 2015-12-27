@@ -68,6 +68,7 @@ public class PseudoCacheConcatFragment
         _initializeCache();
 
         Observable.concat(_getCachedData(), _getFreshData())
+                .first()
               .observeOn(AndroidSchedulers.mainThread())
               .subscribe(new Subscriber<Contributor>() {
                   @Override

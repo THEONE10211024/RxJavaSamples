@@ -66,6 +66,11 @@ public class MainFragment
         clickedOn(new PseudoCacheMergeFragment());
     }
 
+    @OnClick(R.id.btn_demo_pseudo_cache2)
+    void pseudoCacheDemo2() {
+        clickedOn(new PseudoCacheConcatFragment());
+    }
+
     @OnClick(R.id.btn_demo_timing)
     void demoTimerIntervalDelays() {
         clickedOn(new TimingDemoFragment());
@@ -79,6 +84,16 @@ public class MainFragment
     @OnClick(R.id.btn_demo_rotation_persist)
     void demoRotationPersist() {
         clickedOn(new RotationPersist2Fragment());
+        //clickedOn(new RotationPersist1Fragment());
+    }
+    @OnClick(R.id.btn_demo_polling)
+    void demoPolling() {
+        clickedOn(new PollingFragment());
+        //clickedOn(new RotationPersist1Fragment());
+    }
+    @OnClick(R.id.btn_demo_click)
+    void demoBtnClick() {
+        clickedOn(new ButtonClicksFragment());
         //clickedOn(new RotationPersist1Fragment());
     }
 

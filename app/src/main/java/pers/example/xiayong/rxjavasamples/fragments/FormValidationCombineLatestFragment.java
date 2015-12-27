@@ -2,6 +2,7 @@ package pers.example.xiayong.rxjavasamples.fragments;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -72,6 +73,7 @@ public class FormValidationCombineLatestFragment
                                       CharSequence newPassword,
                                       CharSequence newNumber) {
 
+                      Log.d("xiayong",newEmail+" "+newPassword+" "+newNumber);
                       boolean emailValid = !isEmpty(newEmail) &&
                                            EMAIL_ADDRESS.matcher(newEmail).matches();
                       if (!emailValid) {
@@ -109,6 +111,7 @@ public class FormValidationCombineLatestFragment
 
                   @Override
                   public void onNext(Boolean formValid) {
+                      Log.d("xiayong","formValid"+formValid);
                       if (formValid) {
                           _btnValidIndicator.setBackgroundColor(getResources().getColor(R.color.blue));
                       } else {

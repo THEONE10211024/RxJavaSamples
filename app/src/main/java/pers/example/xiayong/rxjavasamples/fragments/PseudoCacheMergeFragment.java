@@ -2,6 +2,7 @@ package pers.example.xiayong.rxjavasamples.fragments;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.util.Log;
 import android.util.Pair;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -40,7 +41,7 @@ public class PseudoCacheMergeFragment
     private HashMap<String, Long> _contributionMap = null;
     private HashMap<Contributor, Long> _resultAgeMap = new HashMap<>();
     private ArrayAdapter<String> _adapter;
-
+    private static final String Tag = "PseudoCacheMerge";
     @Override
     public View onCreateView(LayoutInflater inflater,
                              @Nullable ViewGroup container,
@@ -85,6 +86,7 @@ public class PseudoCacheMergeFragment
                   @Override
                   public void onNext(Pair<Contributor, Long> contributorAgePair) {
                       Contributor contributor = contributorAgePair.first;
+                      Log.d(Tag,contributor.login);
 
                       if (_resultAgeMap.containsKey(contributor) &&
                           _resultAgeMap.get(contributor) > contributorAgePair.second) {

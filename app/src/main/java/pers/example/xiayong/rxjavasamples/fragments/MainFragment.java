@@ -96,6 +96,10 @@ public class MainFragment
         clickedOn(new ButtonClicksFragment());
         //clickedOn(new RotationPersist1Fragment());
     }
+    @OnClick(R.id.btn_demo_reactive_UI)
+    void demoUILogic(){
+        clickedOn(new RxUIFragment());
+    }
 
     private void clickedOn(@NonNull Fragment fragment) {
         final String tag = fragment.getClass().toString();

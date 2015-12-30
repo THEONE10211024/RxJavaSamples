@@ -119,6 +119,12 @@
             android:text="@string/btn_demo_click"
             />
         <Button
+            android:id="@+id/btn_demo_reactive_UI"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="@string/btn_demo_reactive_UI"
+            />
+        <Button
             android:id="@+id/btn_iterate_array"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"

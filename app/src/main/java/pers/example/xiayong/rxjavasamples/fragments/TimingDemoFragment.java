@@ -60,7 +60,7 @@ public class TimingDemoFragment
         _log(String.format("A1 [%s] --- BTN click", _getCurrentTimestamp()));
 
         Observable.timer(2, TimeUnit.SECONDS)//
-              //.just(1).delay(2, TimeUnit.SECONDS)//
+//              .just(1).delay(2, TimeUnit.SECONDS)//
               .subscribe(new Observer<Long>() {
                   @Override
                   public void onCompleted() {

@@ -76,6 +76,7 @@ public class PseudoCacheMergeFragment
                   @Override
                   public void onCompleted() {
                       Timber.d("done loading all data");
+                      Log.d("xiayong","completed");
                   }
 
                   @Override
@@ -86,10 +87,10 @@ public class PseudoCacheMergeFragment
                   @Override
                   public void onNext(Pair<Contributor, Long> contributorAgePair) {
                       Contributor contributor = contributorAgePair.first;
-                      Log.d(Tag,contributor.login);
+                      Log.d(Tag, contributor.login);
 
                       if (_resultAgeMap.containsKey(contributor) &&
-                          _resultAgeMap.get(contributor) > contributorAgePair.second) {
+                              _resultAgeMap.get(contributor) > contributorAgePair.second) {
                           return;
                       }
 

@@ -9,6 +9,8 @@ import android.view.View;
 import android.view.ViewGroup;
 
 
+import java.util.HashMap;
+
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import pers.example.xiayong.rxjavasamples.R;
@@ -94,6 +96,11 @@ public class MainFragment
     @OnClick(R.id.btn_demo_click)
     void demoBtnClick() {
         clickedOn(new ButtonClicksFragment());
+        //clickedOn(new RotationPersist1Fragment());
+    }
+    @OnClick(R.id.btn_iterate_array)
+    void demoBtnIterate() {
+        clickedOn(new IterateArrayFragment());
         //clickedOn(new RotationPersist1Fragment());
     }
 

@@ -63,7 +63,7 @@ public class PollingFragment
 
     @OnClick(R.id.btn_start_simple_polling)
     public void onStartSimplePollingClicked() {
-        _subscriptions.add(Observable.create(new Observable.OnSubscribe<String>() {
+        /*_subscriptions.add(*/Observable.create(new Observable.OnSubscribe<String>() {
             @Override
             public void call(final Subscriber<? super String> observer) {
 
@@ -75,12 +75,12 @@ public class PollingFragment
                           }
                       }, INITIAL_DELAY, POLLING_INTERVAL, TimeUnit.MILLISECONDS);
             }
-        }).take(10).subscribe(new Action1<String>() {
+        }).subscribe(new Action1<String>() {
             @Override
             public void call(String s) {
                 _log(String.format("String polling - %s", s));
             }
-        }));
+        })/*)*/;
     }
 
     // -----------------------------------------------------------------------------------

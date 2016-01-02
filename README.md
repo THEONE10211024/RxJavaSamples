@@ -1,6 +1,5 @@
 # RxJavaSamples
-收集了RxJava常见的使用场景，例子简洁、经典、易懂...
-## More details please see my blog [here](http://blog.csdn.net/theone10211024/article/details/50435325)      
+收集了RxJava常见的使用场景，例子简洁、经典、易懂...samples中的例子我已经在我的博客里介绍了，想进一步了解的同学可以看[这里](http://blog.csdn.net/theone10211024/article/details/50435325)      
 ## (非)著名的库    
 * [RxJava](https://github.com/ReactiveX/RxJava) 没什么好说的，众多Rx系列的发源地。    
 * [RxAndroid](https://github.com/ReactiveX/RxAndroid) JakeWharton大神主导，将RxJava带入了Android，例子不多但在活跃地开发中。你可以从[这里](http://blog.csdn.net/lzyzsd/article/details/45033611)略知一二    
@@ -35,3 +34,5 @@
 ## 网站
 * [ReactiveX](http://reactivex.io) ReactiveX官方网站，不知道它的就如同学Android不知道Android Developer        
 * [RxMarbles]( http://rxmarbles.com) 直观有趣的宝石图！让你对这种编程思想理解得更加透彻！！    
+
+##### 最后，我想说的是RxJava目前在国内的使用频率还比较低，希望大家能成为推动RxJava在国普及的一员！如果你有更多好的文章、网站或工程，请发扬程序员最独特的魅力—开元精神，以便让更多的同行看见、学到和参与进来！

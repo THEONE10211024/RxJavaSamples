@@ -63,7 +63,7 @@ public class PollingFragment
 
     @OnClick(R.id.btn_start_simple_polling)
     public void onStartSimplePollingClicked() {
-        /*_subscriptions.add(*/Observable.create(new Observable.OnSubscribe<String>() {
+        _subscriptions.add(Observable.create(new Observable.OnSubscribe<String>() {
             @Override
             public void call(final Subscriber<? super String> observer) {
 
@@ -80,7 +80,7 @@ public class PollingFragment
             public void call(String s) {
                 _log(String.format("String polling - %s", s));
             }
-        })/*)*/;
+        }));
     }
 
     // -----------------------------------------------------------------------------------

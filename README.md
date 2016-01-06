@@ -18,6 +18,7 @@
 * [Android-ReactiveLocation](https://github.com/mcharmas/Android-ReactiveLocation)    
 * [reark](https://github.com/reark/reark)    
 * [RxPermissions](https://github.com/tbruyelle/RxPermissions)    
+* [rxfilewatcher](https://github.com/helmbold/rxfilewatcher)   
 * [RxLifecycle](https://github.com/trello/RxLifecycle)用来严格控制由于发布了一个订阅后，由于没有及时取消，导致Activity/Fragment无法销毁导致的内存泄露。    
 * [rxloader](https://github.com/evant/rxloader)
 * [ReactiveNetwork](https://github.com/pwittchen/ReactiveNetwork) 使用RxJava来监听网络连接状态和wifi信号强度变化    

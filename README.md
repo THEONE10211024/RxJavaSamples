@@ -23,7 +23,8 @@
 * [rxloader](https://github.com/evant/rxloader)
 * [ReactiveNetwork](https://github.com/pwittchen/ReactiveNetwork) 使用RxJava来监听网络连接状态和wifi信号强度变化    
 * [frodo](https://github.com/android10/frodo)    
-* [rxjava-multiple-sources-sample](https://github.com/dlew/rxjava-multiple-sources-sample) 如何使用RxJava做多级缓存的案例。
+* [rxjava-multiple-sources-sample](https://github.com/dlew/rxjava-multiple-sources-sample) 如何使用RxJava做多级缓存的案例。    
+* [rx-preferences](https://github.com/f2prateek/rx-preferences) 用RxJava实现Android中的SharedPreferences        
 
 ## 技术博客
 * [给Android开发者的RxJava详解]( http://gank.io/post/560e15be2dca930e00da1083)扔物线力作，RxJava讲的通俗易懂。        

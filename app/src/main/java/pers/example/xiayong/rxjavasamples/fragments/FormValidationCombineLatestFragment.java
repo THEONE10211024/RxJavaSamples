@@ -2,6 +2,8 @@ package pers.example.xiayong.rxjavasamples.fragments;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -45,7 +47,22 @@ public class FormValidationCombineLatestFragment
               container,
               false);
         ButterKnife.bind(this, layout);
+        /*_email.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+                Log.d("FormValidation","beforeTextChanged");
+            }
 
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                Log.d("FormValidation","onTextChanged");
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                Log.d("FormValidation","afterTextChanged");
+            }
+        });*/
         _emailChangeObservable = RxTextView.textChanges(_email).skip(1);
         _passwordChangeObservable = RxTextView.textChanges(_password).skip(1);
         _numberChangeObservable = RxTextView.textChanges(_number).skip(1);

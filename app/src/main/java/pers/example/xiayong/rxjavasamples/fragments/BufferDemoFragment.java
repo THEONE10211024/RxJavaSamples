@@ -12,6 +12,7 @@ import android.widget.ListView;
 
 import com.jakewharton.rxbinding.view.RxView;
 import com.jakewharton.rxbinding.view.ViewClickEvent;
+import com.jakewharton.rxbinding.widget.RxTextView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -89,10 +90,11 @@ public class BufferDemoFragment
                   public Integer call(ViewClickEvent onClickEvent) {
                       Timber.d("--------- GOT A TAP");
                       _log("GOT A TAP");
+                      //将一次Click事件转化成一个数字
                       return 1;
                   }
               })
-              .buffer(2, TimeUnit.SECONDS)
+              .buffer(2, TimeUnit.SECONDS)//缓存2s内的“结点”，打包发射！
               .observeOn(AndroidSchedulers.mainThread())
               .subscribe(new Observer<List<Integer>>() {
 

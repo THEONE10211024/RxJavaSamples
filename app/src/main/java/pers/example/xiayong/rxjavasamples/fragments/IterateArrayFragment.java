@@ -74,11 +74,11 @@ public class IterateArrayFragment extends BaseFragment {
     private void _log(String logMsg) {
 
         if (_isCurrentlyOnMainThread()) {
-            _logs.add(0, logMsg + " (main thread) ");
+            _logs.add(0, logMsg);
             _adapter.clear();
             _adapter.addAll(_logs);
         } else {
-            _logs.add(0, logMsg + " (NOT main thread) ");
+            _logs.add(0, logMsg);
 
             // You can only do below stuff on main thread.
             new Handler(Looper.getMainLooper()).post(new Runnable() {

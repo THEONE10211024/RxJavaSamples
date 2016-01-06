@@ -123,7 +123,7 @@ public class ExponentialBackoffFragment
                                       }
                                   });
                         }
-                    })//
+                    })//doOnSubscribe会在进行订阅的时候触发。一般的预处理会放在这里
                     .doOnSubscribe(new Action0() {
                         @Override
                         public void call() {

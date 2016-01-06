@@ -88,7 +88,7 @@ public class RetrofitFragment
     public void onListContributorsClicked() {
         _adapter.clear();
 
-        _subscriptions.add(//
+        _subscriptions.add(
               _api.contributors(_username.getText().toString(), _repo.getText().toString())
                     .subscribeOn(Schedulers.io())
                     .observeOn(AndroidSchedulers.mainThread())

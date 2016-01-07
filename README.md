@@ -36,6 +36,10 @@
 
 ## 网站
 * [ReactiveX](http://reactivex.io) ReactiveX官方网站，不知道它的就如同学Android不知道Android Developer        
-* [RxMarbles]( http://rxmarbles.com) 直观有趣的宝石图！让你对这种编程思想理解得更加透彻！！    
+* [RxMarbles]( http://rxmarbles.com) 直观有趣的宝石图！让你对这种编程思想理解得更加透彻！！      
+
+##书籍
+* [RxJava Essentials(英文版)](http://download.csdn.net/detail/theone10211024/9394367) 讲得比较详细，适合RxJava入门学习。        
+* [RxJava Essentials(中文版)](http://download.csdn.net/detail/theone10211024/9394379) RxJava Essentials的中文翻译。       
 
 ##### 最后，我想说的是RxJava目前在国内的使用频率还比较低，希望大家能成为推动RxJava在国普及的一员！如果你有更多好的文章、网站或工程，请发扬程序员最独特的魅力—开元精神，以便让更多的同行看见、学到和参与进来！

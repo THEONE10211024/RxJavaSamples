@@ -32,7 +32,7 @@
 * [深入浅出RxJava]( http://blog.csdn.net/lzyzsd/article/details/41833541) 深入浅出RxJava系列，一共四篇，这是第一篇。翻译得还不错！    
 * [RxJava大搜集]( http://www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2015/0430/2815.html)这里有你想要的    
 * [RxBus]( http://nerds.weddingpartyapp.com/tech/2014/12/24/implementing-an-event-bus-with-rxjava-rxbus/) 无所不能的RxJava也能做EventBus?看看别人是怎么实现的吧！  
-
+* [当复仇者联盟遇上Dagger2、RxJava和Retrofit的巧妙结合](http://blog.csdn.net/handsome_926/article/details/49176227) RxJava+Dagger2+Retrofit！教你什么才是一个干净的框架！ 
 ## 网站
 * [ReactiveX](http://reactivex.io) ReactiveX官方网站，不知道它的就如同学Android不知道Android Developer        
 * [RxMarbles]( http://rxmarbles.com) 直观有趣的宝石图！让你对这种编程思想理解得更加透彻！！    

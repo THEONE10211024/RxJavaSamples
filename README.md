@@ -25,6 +25,7 @@
 * [frodo](https://github.com/android10/frodo)    
 * [rxjava-multiple-sources-sample](https://github.com/dlew/rxjava-multiple-sources-sample) 如何使用RxJava做多级缓存的案例。    
 * [rx-preferences](https://github.com/f2prateek/rx-preferences) 用RxJava实现Android中的SharedPreferences        
+* [RxCache](https://github.com/VictorAlbertos/RxCache) 为Android和java开发量身打造的缓存库    
 
 ## 技术博客
 * [给Android开发者的RxJava详解]( http://gank.io/post/560e15be2dca930e00da1083)扔物线力作，RxJava讲的通俗易懂。        

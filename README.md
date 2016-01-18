@@ -43,4 +43,4 @@
 * [RxJava Essentials(英文版)](http://download.csdn.net/detail/theone10211024/9394367) 讲得比较详细，适合RxJava入门学习。        
 * [RxJava Essentials(中文版)](http://download.csdn.net/detail/theone10211024/9394379) RxJava Essentials的中文翻译。       
 
-##### 最后，我想说的是RxJava目前在国内的使用频率还比较低，希望大家能成为推动RxJava在国普及的一员！如果你有更多好的文章、网站或工程，请发扬程序员最独特的魅力—开元精神，以便让更多的同行看见、学到和参与进来！
+##### 最后，我想说的是RxJava目前在国内的使用频率还比较低，希望大家能成为推动RxJava在国普及的一员！如果你有更多好的文章、网站或工程，请发扬程序员最独特的魅力—开源精神，以便让更多的同行看见、学到和参与进来！

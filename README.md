@@ -34,6 +34,7 @@
 * [RxJava大搜集]( http://www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2015/0430/2815.html)这里有你想要的    
 * [RxBus]( http://nerds.weddingpartyapp.com/tech/2014/12/24/implementing-an-event-bus-with-rxjava-rxbus/) 无所不能的RxJava也能做EventBus?看看别人是怎么实现的吧！  
 * [当复仇者联盟遇上Dagger2、RxJava和Retrofit的巧妙结合](http://blog.csdn.net/handsome_926/article/details/49176227) RxJava+Dagger2+Retrofit！教你什么才是一个干净的框架！    
+* [Advanced RxJava](http://akarnokd.blogspot.com/) 系列博客，[该系列博客的中文翻译](http://blog.piasy.com/AdvancedRxJava/)。
 
 ## 网站
 * [ReactiveX](http://reactivex.io) ReactiveX官方网站，不知道它的就如同学Android不知道Android Developer        
